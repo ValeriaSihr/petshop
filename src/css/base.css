@@ -6,7 +6,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -14,6 +13,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --color-primary-brand: #9D875C;
+  
 }
 
 body {
