@@ -2,83 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"/>
     <link rel="icon" type="image/svg+xml" href="/petshop/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
     <title>The Wild Kingdom</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/petshop/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/petshop/assets/index-CelSmFbN.css">
+    <link rel="stylesheet" crossorigin href="/petshop/assets/index-C4SvtcHi.css">
   </head>
   <body>
-    <header class="header">
+    <header>
   <div class="container">
-    <div class="header-container">
-      <ul class="header-list">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="">Services</a></li>
-      </ul>
+  <div class="header-container">
+    <ul class="nav-list">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Services</a></li>
+    </ul>
 
-      <h1>the wild kingdom</h1>
+    <svg class="logo" width="379" height="136">
+        <use href="../img/sprite.svg#icon-The-Wild-Kingdom"></use>
+    </svg>
 
-      <ul>
-        <li><a href="">Log in</a></li>
-        <li><a href="">Register</a></li>
-      </ul>
+    <ul class="registration">
+      <li><a href="">Log in</a></li>
+      <li><a href="">Register</a></li>
+    </ul>
 
-      <button type="button">Contact</button>
+    <button class="contact-btn" type="button">Contact</button>
+  </div>
+
+  <!-- Hat -->
+
+   <div class="hero-container">
+
+       <div class="hero-menu">
+         <div class="hero-menu-inline">
+            <p class="hero-slogan">a better world<br>for pets</p>
+
+            <button class="hero-btn" type="button">Explore</button>
+         </div>
+
+        <ul class="hero-slider">
+          <li><img src="/petshop/assets/hero_big_dog-EEkbJjil.png" alt="Beautiful dog" /></li>
+          <li><img src="/petshop/assets/hero_cat1-Cvuf59XN.png" alt="turtle cat" /></li>
+          <li><img src="/petshop/assets/hero_dog1_copy-C2UGbi4h.png" alt="dog in crown" /></li>
+          <li><img src="/petshop/assets/hero_cat2-I8kiElCe.png" alt="white cat" /></li>
+        </ul>
+       </div>
+
+
+
     </div>
+    <button class="slider-btn">
+      <svg class="herosvg1" width="34" height="16">
+        <use href="/petshop/assets/sprite-37MRPsP3.svg#icon-arrow-left"></use>
+      </svg>
+    </button>
 
-    <div class="hero-container">
-      <p>a better world for pets</p>
-
-      <button type="menu">Explore</button>
-
-      <img src="/petshop/assets/hero_big_dog-D8q5IV9P.png" alt="Beatyful dog" />
-
-      <ul>
-        <li><img src="/petshop/assets/hero_cat1-CK-gGNdx.png" alt="turtule cat" /></li>
-        <li><img src="/petshop/assets/hero_dog1-BkWEAFFb.png" alt="dog in crown" /></li>
-        <li><img src="/petshop/assets/hero_cat2-fQC_bDrW.png" alt="white cat" /></li>
-      </ul>
-
-      <ul>
-        <li>
-          <button>
-            <svg class="herosvg1" width="34" height="16">
-              <use href="/petshop/assets/srite-BBkQfToJ.svg#icon-arrow-left"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button>
-            <svg class="herosvg1" width="34" height="16">
-              <use href="/petshop/assets/srite-BBkQfToJ.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </div>
+    <button class="slider-btn">
+      <svg class="herosvg1" width="34" height="16">
+        <use href="/petshop/assets/sprite-37MRPsP3.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      <section>
+      <!-- <section>
   <div class="container">
-    <img src="/petshop/assets/Asset1-B5w2aM_N.png" alt="." />
-    <img src="/petshop/assets/york-Cn5MjTuQ.jpg" alt="Yorkshire" />
+    <img src="./img/Asset1.png" alt="." />
+    <img src="./img/york.jpg" alt="Yorkshire" />
 
     <h2>About Us</h2>
     <p>Treating Pet Like Royalty</p>
@@ -94,24 +99,24 @@
     <ul>
       <li>
         <svg class="" width="60" height="75">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#food"></use></svg
+          <use href="./img/srite.svg#food"></use></svg
         >Pet Food
       </li>
       <li>
         <svg class="" width="60" height="75">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#care"></use></svg
+          <use href="./img/srite.svg#care"></use></svg
         >Pet Care
       </li>
       <li>
         <svg class="" width="60" height="75">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#accessories"></use></svg
+          <use href="./img/srite.svg#accessories"></use></svg
         >Pet Accessories
       </li>
     </ul>
   </div>
-</section>
+</section> -->
 
-      <section class="products">
+      <!-- <section class="products">
   <div class="container">
     <h2>Our Products</h2>
     <p>For All Your Pet Needs</p>
@@ -121,47 +126,47 @@
     </p>
     <ul>
       <li>
-        <img src="/petshop/assets/bed-C_qjMfRF.jpg" alt="Luxury Pet Bed" />
+        <img src="./img/bed.jpg" alt="Luxury Pet Bed" />
         <p>Luxury Pet Bed</p>
         <p>$120</p>
         <svg class="" width="175" height="26">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#stars"></use>
+          <use href="./img/srite.svg#stars"></use>
         </svg>
       </li>
 
       <li>
-        <img src="/petshop/assets/one_bowl-BWtCsviJ.jpg" alt="Luxury Pet Bed" />
+        <img src="./img/one_bowl.jpg" alt="Luxury Pet Bed" />
         <p>Cat Food</p>
         <p>$20</p>
         <svg class="" width="175" height="26">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#stars"></use>
+          <use href="./img/srite.svg#stars"></use>
         </svg>
       </li>
 
       <li>
-        <img src="/petshop/assets/two_bowls-DXhXAm1n.jpg" alt="Luxury Pet Bed" />
+        <img src="./img/two_bowls.jpg" alt="Luxury Pet Bed" />
         <p>Dog Food</p>
         <p>$30</p>
         <svg class="" width="175" height="26">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#stars"></use>
+          <use href="./img/srite.svg#stars"></use>
         </svg>
       </li>
 
       <li>
-        <img src="/petshop/assets/snack-BIhz5IHT.jpg" alt="Luxury Pet Bed" />
+        <img src="./img/snack.jpg" alt="Luxury Pet Bed" />
         <p>Treat for dog</p>
         <p>$60</p>
         <svg class="" width="175" height="26">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#stars"></use>
+          <use href="./img/srite.svg#stars"></use>
         </svg>
       </li>
 
       <li>
-        <img src="/petshop/assets/playing_cat-BVglClBB.jpg" alt="Luxury Pet Bed" />
+        <img src="./img/playing_cat.jpg" alt="Luxury Pet Bed" />
         <p>Scratching Toy for Cat</p>
         <p>$200</p>
         <svg class="" width="175" height="26">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#stars"></use>
+          <use href="./img/srite.svg#stars"></use>
         </svg>
       </li>
 
@@ -170,38 +175,38 @@
         <p>Teddy Bear for Dog</p>
         <p>$80</p>
         <svg class="" width="175" height="26">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#stars"></use>
+          <use href="./img/srite.svg#stars"></use>
         </svg>
       </li>
 
       <li>
-        <img src="/petshop/assets/threats-CnWJ_Jqn.jpg" alt="Luxury Pet Bed" />
+        <img src="./img/threats.jpg" alt="Luxury Pet Bed" />
         <p>Treats Knot Bone</p>
         <p>$8</p>
         <svg class="" width="175" height="26">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#stars"></use>
+          <use href="./img/srite.svg#stars"></use>
         </svg>
       </li>
 
       <li>
-        <img src="/petshop/assets/water_bowl-9bIhpK3f.jpg" alt="Luxury Pet Bed" />
+        <img src="./img/water_bowl.jpg" alt="Luxury Pet Bed" />
         <p>Dog Bowls</p>
         <p>$70</p>
         <svg class="" width="175" height="26">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#stars"></use>
+          <use href="./img/srite.svg#stars"></use>
         </svg>
       </li>
     </ul>
 
     <button type="button">Explore</button>
   </div>
-</section>
+</section> -->
 
-      <section class="services">
+      <!-- <section class="services">
   <div class="container">
-    <div><img src="/petshop/assets/funny_cat-B6bjnhp1.jpg" alt="Funny cat" /></div>
+    <div><img src="./img/funny_cat.jpg" alt="Funny cat" /></div>
     <div>
-      <img src="/petshop/assets/servises_deco-Drb3FjAF.png" alt="sparkle" />
+      <img src="./img/servises_deco.png" alt="sparkle" />
       <h2>Our Services</h2>
       <p>Quality Things For Loving Pets</p>
       <p>"More than a pet store..."</p>
@@ -216,64 +221,64 @@
     <div>
       <ul>
         <li>
-          <img src="/petshop/assets/services1-DbSEp8nV.jpg" alt="Dog" />Taking dogs care to the
+          <img src="./img/services1.jpg" alt="Dog" />Taking dogs care to the
           next level<button>
             <svg class="" width="53" height="24">
-              <use href="/petshop/assets/srite-BBkQfToJ.svg#icon-arrow-right"></use>
+              <use href="./img/srite.svg#icon-arrow-right"></use>
             </svg>
           </button>
         </li>
         <li>
-          <img src="/petshop/assets/services2-CW9KN3tU.jpg" alt="Dog" />We value the best health of
+          <img src="./img/services2.jpg" alt="Dog" />We value the best health of
           your pet<button>
             <svg class="" width="53" height="24">
-              <use href="/petshop/assets/srite-BBkQfToJ.svg#icon-arrow-right"></use>
+              <use href="./img/srite.svg#icon-arrow-right"></use>
             </svg>
           </button>
         </li>
         <li>
-          <img src="/petshop/assets/services3-DXjA9iXD.jpg" alt="Dog" />Trust us with your pet`s
+          <img src="./img/services3.jpg" alt="Dog" />Trust us with your pet`s
           vacation<button>
             <svg class="" width="53" height="24">
-              <use href="/petshop/assets/srite-BBkQfToJ.svg#icon-arrow-right"></use>
+              <use href="./img/srite.svg#icon-arrow-right"></use>
             </svg>
           </button>
         </li>
         <li>
-          <img src="/petshop/assets/services4-BPv_krzh.jpg" alt="Cat" />We treat cats with utmost
+          <img src="./img/services4.jpg" alt="Cat" />We treat cats with utmost
           care<button>
             <svg class="" width="53" height="24">
-              <use href="/petshop/assets/srite-BBkQfToJ.svg#icon-arrow-right"></use>
+              <use href="./img/srite.svg#icon-arrow-right"></use>
             </svg>
           </button>
         </li>
       </ul>
     </div>
   </div>
-</section>
+</section> -->
 
-      <section>
+      <!-- <section>
   <div class="container">
     <div>
-      <img src="/petshop/assets/contact1-BtGvm1a0.png" alt="Cat" />
+      <img src="./img/contact1.png" alt="Cat" />
       <button type="button">
         <svg class="" width="48" height="43">
           <use href="../img/srite.svg#play-fill"></use>
         </svg>
       </button>
-      <img src="/petshop/assets/contact2-BfV2ZXWS.jpg" alt="Dog" />
+      <img src="./img/contact2.jpg" alt="Dog" />
     </div>
     <div>
       <h2>Contact Us</h2>
       <p>Come For the Care, Leave With a Smile</p>
       <svg class="" width="16" height="16">
-        <use href="/petshop/assets/srite-BBkQfToJ.svg#clock-fill"></use>
+        <use href="./img/srite.svg#clock-fill"></use>
       </svg>
       <p>Monday/Friday 9:00-23:00</p>
       <p>Saturday 10:00-21:00</p>
       <address>
         <svg class="" width="16" height="16">
-          <use href="/petshop/assets/srite-BBkQfToJ.svg#geo-alt-fill"></use>
+          <use href="./img/srite.svg#geo-alt-fill"></use>
         </svg>
         <a href="tel:+012-345-6789">+012-345-6789</a><br />
         <a href="mailto:TheWildKingdom@contact.com"
@@ -288,7 +293,7 @@
     </div>
     <div>
       <svg class="" width="70" height="65">
-        <use href="/petshop/assets/srite-BBkQfToJ.svg#paw_svg"></use>
+        <use href="./img/srite.svg#paw_svg"></use>
       </svg>
       <svg class="" width="74" height="33">
         <use href="../img/srite.svg#icon-arrow-left"></use>
@@ -310,7 +315,7 @@
       </svg>
     </div>
   </div>
-</section>
+</section> -->
 
     </main>
 
@@ -328,22 +333,22 @@
       <ul>
         <li>
           <svg class="" width="24" height="24">
-            <use href="/petshop/assets/srite-BBkQfToJ.svg#TW"></use>
+            <use href="/petshop/assets/sprite-37MRPsP3.svg#TW"></use>
           </svg>
         </li>
         <li>
           <svg class="" width="24" height="24">
-            <use href="/petshop/assets/srite-BBkQfToJ.svg#IG"></use>
+            <use href="/petshop/assets/sprite-37MRPsP3.svg#IG"></use>
           </svg>
         </li>
         <li>
           <svg class="" width="24" height="24">
-            <use href="/petshop/assets/srite-BBkQfToJ.svg#TT"></use>
+            <use href="/petshop/assets/sprite-37MRPsP3.svg#TT"></use>
           </svg>
         </li>
         <li>
           <svg class="" width="24" height="24">
-            <use href="/petshop/assets/srite-BBkQfToJ.svg#MD"></use>
+            <use href="/petshop/assets/sprite-37MRPsP3.svg#MD"></use>
           </svg>
         </li>
       </ul>
